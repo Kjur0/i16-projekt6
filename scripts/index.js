@@ -32,7 +32,8 @@ setTimeout(() => {
 			act.push(lang)
 		}
 	}
-	for (let lang of act) {
-		$(lang).removeAttr("disabled")
-	}
+	if (act.length == 2)
+		for (let lang of act) {
+			$(lang).removeAttr("disabled")
+		}
 }, 1000)
