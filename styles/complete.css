@@ -37,3 +37,22 @@ th,
 td {
 	border: unset;
 }
+
+.error {
+	color: red;
+	font-weight: 600;
+	text-align: center;
+}
+
+#go-back {
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 600;
+	font-size: 1.5em;
+	text-align: center;
+	border: 3px solid darkslategray;
+	background-color: darkslategray;
+	border-radius: 3px;
+	padding: 5px;
+	color: paleturquoise;
+	margin: auto 20px;
+}

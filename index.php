@@ -6,14 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Rejestracja</title>
 	<script src="http://code.jquery.com/jquery-1.4.4.js"></script>
-	<script src="script.js" defer></script>
-	<link rel="stylesheet" href="style/index.css">
-	<link type="image/png" sizes="16x16" rel="icon" href="icon/edit-16.png">
-	<link type="image/png" sizes="32x32" rel="icon" href="icon/edit-32.png">
-	<link type="image/png" sizes="96x96" rel="icon" href="icon/edit-96.png">
-	<link type="image/png" sizes="120x120" rel="icon" href="icon/edit-120.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="icon/edit-192.png">
-	<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="icon/edit-180.png">
+	<script src="scripts/index.js" defer></script>
+	<link rel="stylesheet" href="styles/index.css">
+	<link type="image/png" sizes="16x16" rel="icon" href="icons/edit-16.png">
+	<link type="image/png" sizes="32x32" rel="icon" href="icons/edit-32.png">
+	<link type="image/png" sizes="96x96" rel="icon" href="icons/edit-96.png">
+	<link type="image/png" sizes="120x120" rel="icon" href="icons/edit-120.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="icons/edit-192.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="icons/edit-180.png">
 </head>
 
 <body>

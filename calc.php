@@ -5,13 +5,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kalkulator</title>
-	<link rel="stylesheet" href="style/calc.css">
-	<link type="image/png" sizes="16x16" rel="icon" href="icon/idea-16.png">
-	<link type="image/png" sizes="32x32" rel="icon" href="icon/idea-32.png">
-	<link type="image/png" sizes="96x96" rel="icon" href="icon/idea-96.png">
-	<link type="image/png" sizes="120x120" rel="icon" href="icon/idea-120.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="icon/idea-192.png">
-	<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="icon/idea-180.png">
+	<link rel="stylesheet" href="styles/calc.css">
+	<link type="image/png" sizes="16x16" rel="icon" href="icons/idea-16.png">
+	<link type="image/png" sizes="32x32" rel="icon" href="icons/idea-32.png">
+	<link type="image/png" sizes="96x96" rel="icon" href="icons/idea-96.png">
+	<link type="image/png" sizes="120x120" rel="icon" href="icons/idea-120.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="icons/idea-192.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="icons/idea-180.png">
 </head>
 
 <body <?php if (array_key_exists('submit', $_POST)) echo "id='res'"; ?>>
