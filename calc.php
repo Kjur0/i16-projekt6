@@ -158,11 +158,11 @@
 		</label>
 		<div id="add1" class="choice">
 			<div class="el sel">
-				<input type="radio" id="add1T" name="add1" value="true"><br>
+				<input type="radio" id="add1T" name="add1" value="true" required tabindex="-1"><br>
 				<label for="add1T" class="txt">Tak</label>
 			</div>
 			<div class="el sel">
-				<input type="radio" id="add1N" name="add1" value="false"><br>
+				<input type="radio" id="add1N" name="add1" value="false" tabindex="-1"><br>
 				<label for="add1N" class="txt">Nie</label>
 			</div>
 		</div>
@@ -171,133 +171,133 @@
 		</label>
 		<div id="add2" class="choice">
 			<div class="el sel">
-				<input type="radio" id="add2T" name="add2" value="true"><br>
+				<input type="radio" id="add2T" name="add2" value="true" required tabindex="-1"><br>
 				<label for="add2T" class="txt">Tak</label>
 			</div>
 			<div class="el sel">
-				<input type="radio" id="add2N" name="add2" value="false"><br>
+				<input type="radio" id="add2N" name="add2" value="false" tabindex="-1"><br>
 				<label for="add2N" class="txt">Nie</label>
 			</div>
 		</div>
 		<fieldset class="el field">
 			<legend class="el txt">Osiągnięcia:</legend>
-			<details>
+			<details tabindex="-1">
 				<summary class="txt">
 					konkurs o zasięgu ponadwojewódzkim organizowany przez kuratorów oświaty
 				</summary>
-				<div>
-					<input name="achivements[]" id="ach1" type="checkbox" value="10">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach1" type="checkbox" value="10">
 					<label class="txt" for="ach1">tytuł finalisty konkursu przedmiotowego</label>
 				</div>
-				<div>
-					<input name="achivements[]" id="ach2" type="checkbox" value="7">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach2" type="checkbox" value="7">
 					<label class="txt" for="ach2">tytuł laureata konkursu tematycznego lub interdyscyplinarnego</label>
 				</div>
-				<div>
-					<input name="achivements[]" id="ach3" type="checkbox" value="5">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach3" type="checkbox" value="5">
 					<label class="txt" for="ach3">tytuł finalisty konkursu tematycznego lub interdyscyplinarnego</label>
 				</div>
 			</details>
-			<details>
+			<details tabindex="-1">
 				<summary class="txt">
 					konkurs o zasięgu międzynarodowym lub ogólnopolskim albo turniej o zasięgu ogólnopolskim
 				</summary>
-				<div>
-					<input name="achivements[]" id="ach4" type="checkbox" value="10">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach4" type="checkbox" value="10">
 					<label class="txt" for="ach4">tytuł finalisty konkursu z przedmiotu lub przedmiotów artystycznych objętych ramowym planem nauczania szkoły artystycznej</label>
 				</div>
-				<div>
-					<input name="achivements[]" id="ach5" type="checkbox" value="4">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach5" type="checkbox" value="4">
 					<label class="txt" for="ach5">tytuł laureata turnieju z przedmiotu lub przedmiotów artystycznych nieobjętych ramowym planem nauczania szkoły artystycznej</label>
 				</div>
-				<div>
-					<input name="achivements[]" id="ach6" type="checkbox" value="3">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach6" type="checkbox" value="3">
 					<label class="txt" for="ach6">tytuł finalisty turnieju z przedmiotu lub przedmiotów artystycznych nieobjętych ramowym planem nauczania szkoły artystycznej</label>
 				</div>
 			</details>
-			<details>
+			<details tabindex="-1">
 				<summary class="txt">
 					konkurs o zasięgu wojewódzkim organizowany przez kuratora oświaty
 				</summary>
-				<div>
-					<input name="achivements[]" id="ach7" type="checkbox" value="10">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach7" type="checkbox" value="10">
 					<label class="txt" for="ach7">przynajmniej dwa tytuły finalisty konkursu przedmiotowego</label>
 				</div>
-				<div>
-					<input name="achivements[]" id="ach8" type="checkbox" value="7">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach8" type="checkbox" value="7">
 					<label class="txt" for="ach8">przynajmniej dwa tytuły laureata konkursu tematycznego lub interdyscyplinarnego</label>
 				</div>
-				<div>
-					<input name="achivements[]" id="ach9" type="checkbox" value="5">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach9" type="checkbox" value="5">
 					<label class="txt" for="ach9">przynajmniej dwa tytuły finalisty konkursu tematycznego lub interdyscyplinarnego</label>
 				</div>
-				<div>
-					<input name="achivements[]" id="ach10" type="checkbox" value="7">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach10" type="checkbox" value="7">
 					<label class="txt" for="ach10">tytuł finalisty konkursu przedmiotowego</label>
 				</div>
-				<div>
-					<input name="achivements[]" id="ach11" type="checkbox" value="5">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach11" type="checkbox" value="5">
 					<label class="txt" for="ach11">tytuł laureata konkursu tematycznego lub interdyscyplinarnego</label>
 				</div>
-				<div>
-					<input name="achivements[]" id="ach12" type="checkbox" value="3">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach12" type="checkbox" value="3">
 					<label class="txt" for="ach12">tytuł finalisty konkursu tematycznego lub interdyscyplinarnego</label>
 				</div>
 			</details>
-			<details>
+			<details tabindex="-1">
 				<summary class="txt">
 					konkurs albo turniej, o zasięgu ponadwojewódzkim lub wojewódzkim
 				</summary>
-				<div>
-					<input name="achivements[]" id="ach13" type="checkbox" value="10">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach13" type="checkbox" value="10">
 					<label class="txt" for="ach13">przynajmniej dwa tytuły finalisty konkursu z przedmiotu lub przedmiotów artystycznych objętych ramowym planem nauczania szkoły artystycznej</label>
 				</div>
-				<div>
-					<input name="achivements[]" id="ach14" type="checkbox" value="7">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach14" type="checkbox" value="7">
 					<label class="txt" for="ach14">przynajmniej dwa tytuły laureata turnieju z przedmiotu lub przedmiotów artystycznych nieobjętych ramowym planem nauczania szkoły artystycznej</label>
 				</div>
-				<div>
-					<input name="achivements[]" id="ach15" type="checkbox" value="5">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach15" type="checkbox" value="5">
 					<label class="txt" for="ach15">przynajmniej dwa tytuły finalisty turnieju z przedmiotu lub przedmiotów artystycznych nieobjętych ramowym planem nauczania szkoły artystycznej</label>
 				</div>
-				<div>
-					<input name="achivements[]" id="ach16" type="checkbox" value="7">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach16" type="checkbox" value="7">
 					<label class="txt" for="ach16">tytuł finalisty konkursu z przedmiotu lub przedmiotów artystycznych objętych ramowym planem nauczania szkoły artystycznej</label>
 				</div>
-				<div>
-					<input name="achivements[]" id="ach17" type="checkbox" value="3">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach17" type="checkbox" value="3">
 					<label class="txt" for="ach17">tytuł laureata turnieju z przedmiotu lub przedmiotów artystycznych nieobjętych ramowym planem nauczania szkoły artystycznej</label>
 				</div>
-				<div>
-					<input name="achivements[]" id="ach18" type="checkbox" value="2">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach18" type="checkbox" value="2">
 					<label class="txt" for="ach18">tytuł finalisty turnieju z przedmiotu lub przedmiotów artystycznych nieobjętych ramowym planem nauczania szkoły artystycznej</label>
 				</div>
 			</details>
-			<details>
+			<details tabindex="-1">
 				<summary class="txt">
 					wysokie miejsce w zawodach wiedzy innych niż wymienione, artystycznych lub sportowych, organizowanych przez kuratora oświaty lub inne podmioty działające na terenie szkoły, na szczeblu:
 				</summary>
-				<div>
-					<input name="achivements[]" id="ach19" type="checkbox" value="4">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach19" type="checkbox" value="4">
 					<label class="txt" for="ach19">międzynarodowym</label>
 				</div>
-				<div>
-					<input name="achivements[]" id="ach20" type="checkbox" value="3">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach20" type="checkbox" value="3">
 					<label class="txt" for="ach20">krajowym</label>
 				</div>
-				<div>
-					<input name="achivements[]" id="ach21" type="checkbox" value="2">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach21" type="checkbox" value="2">
 					<label class="txt" for="ach21">wojewódzkim</label>
 				</div>
-				<div>
-					<input name="achivements[]" id="ach22" type="checkbox" value="1">
+				<div class="sel">
+					<input tabindex="-1" name="achivements[]" id="ach22" type="checkbox" value="1">
 					<label class="txt" for="ach22">powiatowym</label>
 				</div>
 			</details>
-			<input name="achivements[]" id="ach23" type="checkbox" value="0" style="display: none;" checked>
-			<input name="achivements[]" id="ach24" type="checkbox" value="0" style="display: none;" checked>
+			<input tabindex="-1" name="achivements[]" id="ach23" type="checkbox" value="0" style="display: none;" checked>
+			<input tabindex="-1" name="achivements[]" id="ach24" type="checkbox" value="0" style="display: none;" checked>
 		</fieldset>
-		<input type="submit" id="submit" name="submit" value="Oblicz" class="el">
+		<input type="submit" id="submit" name="submit" value="Oblicz" class="el" tabindex="-1">
 	</form>
 </body>
 

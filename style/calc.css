@@ -116,31 +116,39 @@ legend {
 	width: 15px;
 	height: 15px;
 	appearance: none;
-	border-image: round;
-	border-radius: 50%;
 	outline: none;
 }
 
-.sel input:focus {
-	outline: solid 2px seagreen;
-	outline-offset: 0px;
+.sel input[type="radio"] {
+	border-radius: 50%;
+}
+
+.sel input[type="checkbox"] {
+	border-radius: 30%;
 }
 
 .sel input:checked {
 	border: solid 2px darkseagreen;
 }
 
-.sel input:checked::before {
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	background-color: seagreen;
+.sel input:checked::after {
 	display: block;
 	content: " ";
+	background-color: seagreen;
+	width: 100%;
+	height: 100%;
 	transform: scale(0.75);
 }
 
-.sel input:checked+label {
+.sel input[type="radio"]:checked::after {
+	border-radius: 50%;
+}
+
+.sel input[type="checkbox"]:checked::after {
+	border-radius: 30%;
+}
+
+.sel input:checked+br+label {
 	font-weight: 600;
 }
 
@@ -148,7 +156,7 @@ legend {
 	border: solid 2px gray;
 }
 
-.sel input:disabled+label {
+.sel input:disabled+br+label {
 	font-style: italic;
 }
 
