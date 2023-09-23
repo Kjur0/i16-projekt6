@@ -26,14 +26,17 @@ for (let lang of langs) {
 
 setTimeout(() => {
 	for (let lang of langs) {
-		$(lang).attr("disabled", true)
 		let checkedBox = $(lang).attr("checked")
 		if (checkedBox === true) {
 			act.push(lang)
 		}
 	}
-	if (act.length == 2)
+	if (act.length == 2) {
+		for (let lang of langs) {
+			$(lang).attr("disabled", true)
+		}
 		for (let lang of act) {
 			$(lang).removeAttr("disabled")
 		}
+	}
 }, 1000)
