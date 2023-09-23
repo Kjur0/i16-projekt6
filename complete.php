@@ -27,7 +27,7 @@
 		function validate()
 		{
 			$err = 0;
-			if (count($_POST["lang"]) != 2) {
+			if (!array_key_exists("lang", $_POST) | count($_POST["lang"]) != 2) {
 				$err += 1;
 			}
 			if (preg_match("/(\+[0-9][0-9])?[0-9]{9}/", $_POST["phone"]) == 0) {
