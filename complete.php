@@ -19,11 +19,6 @@
 	<fieldset>
 		<legend>Podsumowanie</legend>
 		<?php
-
-		require "vendor/autoload.php";
-
-		use Nette\Utils\Validators;
-
 		function validate()
 		{
 			$err = 0;
@@ -33,7 +28,7 @@
 			if (preg_match("/(\+[0-9][0-9])?[0-9]{9}/", $_POST["phone"]) == 0) {
 				$err += 2;
 			}
-			if (!Validators::isEmail($_POST["mail"])) {
+			if (preg_match('"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"', $_POST["mail"]) == 0) {
 				$err += 4;
 			}
 			return $err;
