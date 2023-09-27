@@ -38,67 +38,65 @@
 			}
 			return $err;
 		}
-
-		$fname = $_POST["fname"];
-		$lname = $_POST["lname"];
-		$bdate = date_format(date_create($_POST["bdate"]), "d.m.Y");
-		switch ($_POST['gen']) {
-			case 'M':
-				$gen = "Mężczyzna";
-				break;
-			case 'K':
-				$gen = "Kobieta";
-				break;
-		}
-		$address = str_replace("\n", "<br>", $_POST["address"]);
-		$points = $_POST["points"];
-		switch ($_POST['prof']) {
-			case 'MECH':
-				$prof = "Technik Mechatronik";
-				break;
-			case 'INF':
-				$prof = "Technik Informatyk";
-				break;
-			case 'PROG':
-				$prof = "Technik Programista";
-				break;
-		}
-		$l = [];
-		$l = $_POST["lang"];
-		switch ($l[0]) {
-			case "EN":
-				$lang = "Angielski";
-				break;
-			case "DE":
-				$lang = "Niemiecki";
-				break;
-		}
-		switch ($l[1]) {
-			case "DE":
-				$lang = $lang . " i Niemiecki";
-				break;
-			case "ES":
-				$lang = $lang . " i Hiszpański";
-				break;
-		}
-		$phone = $_POST["phone"];
-		$mail = $_POST["mail"];
 		$err = validate();
 		if ($err == 0) {
-			echo <<<EOD
+			$fname = $_POST["fname"];
+			$lname = $_POST["lname"];
+			$bdate = date_format(date_create($_POST["bdate"]), "d.m.Y");
+			switch ($_POST['gen']) {
+				case 'M':
+					$gen = "Mężczyzna";
+					break;
+				case 'K':
+					$gen = "Kobieta";
+					break;
+			}
+			$address = str_replace("\n", "<br>", $_POST["address"]);
+			$points = $_POST["points"];
+			switch ($_POST['prof']) {
+				case 'MECH':
+					$prof = "Technik Mechatronik";
+					break;
+				case 'INF':
+					$prof = "Technik Informatyk";
+					break;
+				case 'PROG':
+					$prof = "Technik Programista";
+					break;
+			}
+			$l = [];
+			$l = $_POST["lang"];
+			switch ($l[0]) {
+				case "EN":
+					$lang = "Angielski";
+					break;
+				case "DE":
+					$lang = "Niemiecki";
+					break;
+			}
+			switch ($l[1]) {
+				case "DE":
+					$lang = $lang . " i Niemiecki";
+					break;
+				case "ES":
+					$lang = $lang . " i Hiszpański";
+					break;
+			}
+			$phone = $_POST["phone"];
+			$mail = $_POST["mail"];
 
-							<table>
-								<tr><th>Imię:</th><td>$fname</td></tr>
-								<tr><th>Nazwisko:</th><td>$lname</td></tr>
-								<tr><th>Data urodzenia:</th><td>$bdate</td></tr>
-								<tr><th>Płeć:</th><td>$gen</td></tr>
-								<tr><th>Miejsce zamieszkania:</th><td>$address</td></tr>
-								<tr><th>Ilość punktów:</th><td>$points</td></tr>
-								<tr><th>Profil klasy:</th><td>$prof</td></tr>
-								<tr><th>Wybrane języki:</th><td>$lang</td></tr>
-								<tr><th>Telefon kontaktowy:</th><td>$phone</td></tr>
-								<tr><th>E-mail:</th><td>$mail</td></tr>
-								</table>
+			echo <<<EOD
+					<table>
+						<tr><th>Imię:</th><td>$fname</td></tr>
+						<tr><th>Nazwisko:</th><td>$lname</td></tr>
+						<tr><th>Data urodzenia:</th><td>$bdate</td></tr>
+						<tr><th>Płeć:</th><td>$gen</td></tr>
+						<tr><th>Miejsce zamieszkania:</th><td>$address</td></tr>
+						<tr><th>Ilość punktów:</th><td>$points</td></tr>
+						<tr><th>Profil klasy:</th><td>$prof</td></tr>							<tr><th>Wybrane języki:</th><td>$lang</td></tr>
+						<tr><th>Telefon kontaktowy:</th><td>$phone</td></tr>
+						<tr><th>E-mail:</th><td>$mail</td></tr>
+					</table>
 				EOD;
 		}
 		if ($err & 1) {
